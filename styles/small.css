@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: steelblue;
+    --secondary-color: darkseagreen;
+    --background-color: floralwhite;
+    --card-color: white;
+    --border-color: gainsboro;
+    --text-color: black;
+    --light-text-color: white;
+    --logo-size: 50px;
+    --icon-size: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: var(--logo-size) 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--card-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+header img {
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
+header span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#menu {
+    font-size: larger;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: var(--light-text-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 1px solid var(--border-color);
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0 0 1rem;
+    color: var(--text-color);
+}
+
+section {
+    margin-bottom: 1rem;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+section h2 {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    text-align: center;
+    font-size: larger;
+}
+
+section p {
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+section img {
+    display: block;
+    max-width: 250px;
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 6px;
+}
+
+section div {
+    padding: 1rem;
+}
+
+section:nth-of-type(3) > div:first-of-type {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+#course-cards {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.course-card.completed {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
