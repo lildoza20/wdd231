@@ -1,0 +1,18 @@
+{
+    "familyName": "Mendoza Family",
+    "dateMovedIn": "April 4, 2026",
+    "peopleInFamily": 2,
+    "visitedByBishop": true,
+    "family": {
+        "person1": {
+            "firstName": "Rafael",
+            "gender": "Male",
+            "birthdate": "May 23, 2003"
+        },
+        "person2": {
+            "firstName": "Karla",
+            "gender": "Female",
+            "birthdate": "January 3, 2004"
+        }
+    }
+}
