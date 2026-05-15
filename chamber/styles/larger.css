@@ -1,0 +1,37 @@
+@media screen and (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    #main-nav a {
+        border-top: none;
+    }
+
+    #member-cards.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #member-cards.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

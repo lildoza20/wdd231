@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> El Paso Chamber of Commerce Directory | WDD 231 </title>
+    <meta name="description" content="Business directory for the El Paso Chamber of Commerce for WDD 231 Project">
+    <meta name="author" content="Rafael Mendoza">
+    <meta property="og:title" content="El Paso Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore local businesses in the El Paso Chamber of Commerce directory.">
+    <meta property="og:image" content="https://lildoza20.github.io/wdd231/chamber/coc-og-image.jpg">
+    <meta property="og:url" content="https://lildoza20.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="site-branding">
+            <img src="images/coc-og-image.jpg" alt="El Paso Chamber logo">
+            <div>
+                <span class="site-name"> El Paso Chamber of Commerce </span>
+            </div>
+        </div>
+        <button id="menu-button" aria-label="Open navigation menu"> ☰ </button>
+        <nav id="main-nav">
+        <a href="index.html"> Home </a>
+        <a href="directory.html" class="active"> Directory </a>
+        <a href="discover.html"> Discover </a>
+        <a href="join.html"> Join </a>
+        </nav>
+    </header>
+    <main>
+        <h1> Business Directory </h1>
+        <section class="directory-intro">
+            <p> Explore and support local businesses that serve the El Paso community. </p>
+        </section>
+        <section class="view-controls" aria-label="Directory view controls">
+            <button id="grid-view" class="active-button"> Grid View </button>
+            <button id="list-view"> List View </button>
+        </section>
+        <section id="member-cards" class="grid-view" aria-label="Chamber business members"></section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong> El Paso Chamber of Commerce </strong></p>
+            <p> 10 Civic Center Plaza </p>
+            <p> El Paso, Texas 79901 </p>
+            <p> info@elpasochamber.example </p>
+            <p> 915-555-0100 </p>
+        </div>
+        <div class="footer-project">
+            <p> WDD 231 Chamber Project </p>
+            <p> Rafael Mendoza </p>
+            <p>&copy; <span id="current-year"></span> El Paso Chamber of Commerce </p>
+            <p> Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

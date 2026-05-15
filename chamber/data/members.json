@@ -1,0 +1,58 @@
+[
+    {
+        "businessName": "Desert Peak Coffee",
+        "businessAddress": "1421 Mesa Hills Drive, El Paso, TX 79912",
+        "businessPhone": "915-555-0142",
+        "businessWebsite": "https://www.desertpeakcoffee.com",
+        "businessLogo": "desert-peak-coffee.jpg",
+        "businessMembers": 3
+    },
+    {
+        "businessName": "Sun City GameStore",
+        "businessAddress": "8201 Gateway Boulevard West, El Paso, TX 79925",
+        "businessPhone": "915-555-0188",
+        "businessWebsite": "https://www.suncitygamestore.com",
+        "businessLogo": "sun-city-gamestore.jpg",
+        "businessMembers": 2
+    },
+    {
+        "businessName": "Borderland Fence Co.",
+        "businessAddress": "3902 Alameda Avenue, El Paso, TX 79905",
+        "businessPhone": "915-555-0167",
+        "businessWebsite": "https://www.borderlandfenceco.com",
+        "businessLogo": "borderland-fence-co.jpg",
+        "businessMembers": 3
+    },
+    {
+        "businessName": "Franklin Mountain Fitness",
+        "businessAddress": "6750 North Mesa Street, El Paso, TX 79912",
+        "businessPhone": "915-555-0115",
+        "businessWebsite": "https://www.franklinmountainfitness.com",
+        "businessLogo": "franklin-mountain-fitness.jpg",
+        "businessMembers": 1
+    },
+    {
+        "businessName": "Mission Trail Bakery",
+        "businessAddress": "1045 Socorro Road, El Paso, TX 79927",
+        "businessPhone": "915-555-0194",
+        "businessWebsite": "https://www.missiontrailbakery.com",
+        "businessLogo": "mission-trail-bakery.jpg",
+        "businessMembers": 2
+    },
+    {
+        "businessName": "Rio Grande Web Design",
+        "businessAddress": "221 Stanton Street, El Paso, TX 79901",
+        "businessPhone": "915-555-0133",
+        "businessWebsite": "https://www.riograndewebdesign.com",
+        "businessLogo": "rio-grande-web-design.jpg",
+        "businessMembers": 3
+    },
+    {
+        "businessName": "Sunset Auto Repair",
+        "businessAddress": "5310 Dyer Street, El Paso, TX 79904",
+        "businessPhone": "915-555-0179",
+        "businessWebsite": "https://www.sunsetautorepair.com",
+        "businessLogo": "sunset-auto-repair.jpg",
+        "businessMembers": 1
+    }
+]
