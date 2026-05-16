@@ -35,8 +35,8 @@ function displayMembers(members) {
         logo.src = `images/${member.businessLogo}`;
         logo.alt = `${member.businessName} logo`;
         logo.loading = "lazy";
-        logo.width = 300;
-        logo.height = 200;
+        logo.width = 450;
+        logo.height = 300;
 
         name.textContent = member.businessName;
         address.textContent = member.businessAddress;
