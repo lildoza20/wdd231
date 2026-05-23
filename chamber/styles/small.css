@@ -27,14 +27,30 @@ h2,
     font-family: "Merriweather", Georgia, serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
+h1 {
+    color: var(--primary-color);
+    text-align: center;
 }
 
 img {
     display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+a:focus,
+button:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
 }
 
 .site-branding {
@@ -99,24 +115,133 @@ main {
     padding: 1rem;
 }
 
-h1 {
+.card,
+.events-card,
+.weather-card,
+.member-card,
+.spotlight-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px lightgray;
+}
+
+.home-page .hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.home-page .hero img {
+    width: 100%;
+    height: auto;
+}
+
+.home-page .hero-content {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.home-page .hero-content h1 {
+    color: white;
+}
+
+.home-page .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: white;
     color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.home-page .cta-button:hover {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+.home-page .home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.home-page .events-card article {
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.home-page .weather-card figure {
+    margin: 1rem 0;
     text-align: center;
 }
 
-.directory-intro {
+.home-page #weather-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.home-page figcaption,
+.home-page #weather-description {
+    text-transform: capitalize;
+}
+
+.home-page #forecast {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.home-page .forecast-day {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--background-color);
+}
+
+.home-page .spotlight-section {
+    margin-top: 1.5rem;
+}
+
+.home-page #spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.home-page .spotlight-card {
+    text-align: center;
+}
+
+.home-page .spotlight-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.directory-page .directory-intro {
     text-align: center;
     color: var(--muted-color);
 }
 
-.view-controls {
+.directory-page .view-controls {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin: 1.5rem 0;
 }
 
-.view-controls button {
+.directory-page .view-controls button {
     padding: 0.5rem 1rem;
     border: 1px solid var(--primary-color);
     background-color: white;
@@ -125,28 +250,23 @@ h1 {
     cursor: pointer;
 }
 
-.view-controls button:hover,
-.view-controls .active-button {
+.directory-page .view-controls button:hover,
+.directory-page .view-controls .active-button {
     background-color: var(--primary-color);
     color: white;
 }
 
-#member-cards.grid-view {
+.directory-page #member-cards.grid-view {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-.member-card {
-    background-color: var(--card-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1rem;
+.directory-page .member-card {
     text-align: center;
-    box-shadow: 0 2px 8px lightgray;
 }
 
-.member-card img {
+.directory-page .member-card img {
     width: 100%;
     max-width: 450px;
     height: auto;
@@ -154,39 +274,38 @@ h1 {
     border-radius: 8px;
 }
 
-.member-card h2 {
+.directory-page .member-card h2 {
     color: var(--primary-color);
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
-.member-card p {
+.directory-page .member-card p {
     margin: 0.5rem 0;
 }
 
-.member-card a {
+.directory-page .member-card a {
     display: inline-block;
     margin-top: 1rem;
-    color: var(--secondary-color);
     font-weight: bold;
 }
 
-.membership {
+.directory-page .membership {
     font-weight: bold;
     color: var(--primary-color);
 }
 
-#member-cards.list-view {
+.directory-page #member-cards.list-view {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-#member-cards.list-view .member-card {
+.directory-page #member-cards.list-view .member-card {
     text-align: left;
 }
 
-#member-cards.list-view .member-card img {
+.directory-page #member-cards.list-view .member-card img {
     display: none;
 }
 

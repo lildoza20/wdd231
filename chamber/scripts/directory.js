@@ -45,7 +45,7 @@ function displayMembers(members) {
         membership.textContent = `Membership Level: ${getMembershipName(member.businessMembers)}`;
         membership.classList.add("membership");
 
-        website.textContent = "Visit Website";
+        website.textContent = `Visit ${member.businessName} Website`;
         website.href = member.businessWebsite;
         website.target = "_blank";
         website.rel = "noopener";
