@@ -7,6 +7,10 @@
     --text-color: black;
     --muted-color: dimgray;
     --border-color: gainsboro;
+    --nav-border-color: slategray;
+    --shadow-color: lightgray;
+    --modal-shadow-color: gray;
+    --backdrop-color: rgb(0 0 0 / 50%);
 }
 
 * {
@@ -49,7 +53,7 @@ button:focus {
 
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-color);
     padding: 1rem;
 }
 
@@ -64,12 +68,12 @@ header {
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--card-color);
 }
 
 .site-name {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -78,7 +82,7 @@ header {
     margin-left: auto;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: white;
+    background-color: var(--card-color);
     color: var(--primary-color);
     border: none;
     border-radius: 8px;
@@ -97,16 +101,16 @@ header {
 }
 
 #main-nav a {
-    color: white;
+    color: var(--card-color);
     text-decoration: none;
     padding: 1rem;
-    border-top: 1px solid slategray;
+    border-top: 1px solid var(--nav-border-color);
 }
 
 #main-nav a:hover,
 #main-nav a.active {
     background-color: var(--accent-color);
-    color: black;
+    color: var(--text-color);
 }
 
 main {
@@ -124,7 +128,7 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 8px lightgray;
+    box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .home-page .hero {
@@ -144,18 +148,18 @@ main {
     padding: 1rem;
     text-align: center;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-color);
 }
 
 .home-page .hero-content h1 {
-    color: white;
+    color: var(--card-color);
 }
 
 .home-page .cta-button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.75rem 1rem;
-    background-color: white;
+    padding: .5rem 1rem;
+    background-color: var(--card-color);
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
@@ -164,7 +168,7 @@ main {
 
 .home-page .cta-button:hover {
     background-color: var(--accent-color);
-    color: black;
+    color: var(--text-color);
 }
 
 .home-page .home-grid {
@@ -175,8 +179,8 @@ main {
 
 .home-page .events-card article {
     border-top: 1px solid var(--border-color);
-    padding-top: 0.75rem;
-    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .home-page .weather-card figure {
@@ -244,7 +248,7 @@ main {
 .directory-page .view-controls button {
     padding: 0.5rem 1rem;
     border: 1px solid var(--primary-color);
-    background-color: white;
+    background-color: var(--card-color);
     color: var(--primary-color);
     border-radius: 6px;
     cursor: pointer;
@@ -253,7 +257,7 @@ main {
 .directory-page .view-controls button:hover,
 .directory-page .view-controls .active-button {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-color);
 }
 
 .directory-page #member-cards.grid-view {
@@ -322,7 +326,7 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 8px lightgray;
+    box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .join-page form {
@@ -352,11 +356,11 @@ main {
 
 .join-page form button,
 .join-page .membership-card button {
-    padding: 1rem 1rem;
+    padding: 1rem;
     border: 1px solid var(--primary-color);
     border-radius: 8px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-color);
     font-weight: bold;
     cursor: pointer;
 }
@@ -364,7 +368,7 @@ main {
 .join-page form button:hover,
 .join-page .membership-card button:hover {
     background-color: var(--accent-color);
-    color: black;
+    color: var(--text-color);
 }
 
 .join-page .membership-section {
@@ -414,13 +418,13 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1.5rem;
-    background-color: white;
-    box-shadow: 0 0 2rem gray;
+    background-color: var(--card-color);
+    box-shadow: 0 0 2rem var(--modal-shadow-color);
     position: relative;
 }
 
 .join-page dialog::backdrop {
-    background-color: rgb(0 0 0 / 50%);
+    background-color: var(--backdrop-color);
 }
 
 .join-page dialog h2 {
@@ -433,8 +437,8 @@ main {
     top: 1rem;
     right: 1rem;
     border: 1px solid var(--border-color);
-    background-color: white;
-    color: black;
+    background-color: var(--card-color);
+    color: var(--text-color);
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
@@ -452,7 +456,7 @@ footer {
     margin-top: 2rem;
     padding: 1rem;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--card-color);
     text-align: center;
 }
 
