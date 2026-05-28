@@ -309,6 +309,145 @@ main {
     display: none;
 }
 
+.join-page .join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.join-page .join-form-card,
+.join-page .membership-section,
+.thankyou-page .thankyou-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px lightgray;
+}
+
+.join-page form {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-page label {
+    display: grid;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.join-page input,
+.join-page select,
+.join-page textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font: inherit;
+}
+
+.join-page textarea {
+    resize: vertical;
+}
+
+.join-page form button,
+.join-page .membership-card button {
+    padding: 1rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.join-page form button:hover,
+.join-page .membership-card button:hover {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+.join-page .membership-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-page .membership-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--background-color);
+    animation: fadeSlideIn 0.8s ease both;
+}
+
+.join-page .membership-card:nth-of-type(2) {
+    animation-delay: 0s;
+}
+
+.join-page .membership-card:nth-of-type(3) {
+    animation-delay: 0.15s;
+}
+
+.join-page .membership-card:nth-of-type(4) {
+    animation-delay: 0.3s;
+}
+
+.join-page .membership-card:nth-of-type(5) {
+    animation-delay: 0.45s;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.join-page dialog {
+    width: 90%;
+    max-width: 500px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 2rem gray;
+    position: relative;
+}
+
+.join-page dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.join-page dialog h2 {
+    padding-right: 3rem;
+    color: var(--primary-color);
+}
+
+.join-page .close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.thankyou-page .thankyou-card {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thankyou-page .thankyou-card p {
+    margin: 1rem 0;
+}
+
 footer {
     margin-top: 2rem;
     padding: 1rem;

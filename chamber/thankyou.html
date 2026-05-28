@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thank You | El Paso Chamber of Commerce | WDD 231 </title>
+    <meta name="description" content="Thank you page for the El Paso Chamber of Commerce membership application.">
+    <meta name="author" content="Rafael Mendoza">
+    <meta property="og:title" content="Thank You | El Paso Chamber of Commerce">
+    <meta property="og:description" content="Thank you for applying to join the El Paso Chamber of Commerce.">
+    <meta property="og:image" content="https://lildoza20.github.io/wdd231/chamber/images/coc-og-image.jpg">
+    <meta property="og:url" content="https://lildoza20.github.io/wdd231/chamber/thankyou.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body class="thankyou-page">
+    <header>
+        <div class="site-branding">
+            <img src="images/coc-og-image.jpg" alt="El Paso Chamber logo">
+            <div>
+                <span class="site-name"> El Paso Chamber of Commerce </span>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu"> ☰ </button>
+
+        <nav id="main-nav">
+            <a href="index.html"> Home </a>
+            <a href="directory.html"> Directory </a>
+            <a href="discover.html"> Discover </a>
+            <a href="join.html" class="active"> Join </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou-card">
+            <h1> Thank You for Submitting Your Application! </h1>
+            <p> We received your Chamber membership application and will review it soon. </p>
+
+            <h2>Submitted Information</h2>
+            <p><strong> First Name: </strong> <span id="first-name"></span></p>
+            <p><strong> Last Name: </strong> <span id="last-name"></span></p>
+            <p><strong> Email: </strong> <span id="email"></span></p>
+            <p><strong> Mobile Phone: </strong> <span id="mobile-phone"></span></p>
+            <p><strong> Business Name: </strong> <span id="business-name"></span></p>
+            <p><strong> Date Submitted: </strong> <span id="timestamp-display"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong> El Paso Chamber of Commerce </strong></p>
+            <p> 10 Civic Center Plaza </p>
+            <p> El Paso, Texas 79901 </p>
+            <p> info@elpasochamber.example </p>
+            <p> 915-555-0100 </p>
+        </div>
+
+        <div class="footer-project">
+            <p> WDD 231 Chamber Project </p>
+            <p> Rafael Mendoza </p>
+            <p>&copy; <span id="current-year"></span> El Paso Chamber of Commerce </p>
+            <p> Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

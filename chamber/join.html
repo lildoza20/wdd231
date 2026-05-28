@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Join | El Paso Chamber of Commerce | WDD 231 </title>
+    <meta name="description" content="Join page for the El Paso Chamber of Commerce WDD 231 project.">
+    <meta name="author" content="Rafael Mendoza">
+    <meta property="og:title" content="Join the El Paso Chamber of Commerce">
+    <meta property="og:description" content="Apply to join the El Paso Chamber of Commerce.">
+    <meta property="og:image" content="https://lildoza20.github.io/wdd231/chamber/images/coc-og-image.jpg">
+    <meta property="og:url" content="https://lildoza20.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body class="join-page">
+    <header>
+        <div class="site-branding">
+            <img src="images/coc-og-image.jpg" alt="El Paso Chamber logo">
+            <div>
+                <span class="site-name"> El Paso Chamber of Commerce </span>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu"> ☰ </button>
+
+        <nav id="main-nav">
+            <a href="index.html"> Home </a>
+            <a href="directory.html"> Directory </a>
+            <a href="discover.html"> Discover </a>
+            <a href="join.html" class="active"> Join </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1> Join the Chamber </h1>
+
+        <div class="join-layout">
+            <section class="join-form-card">
+                <h2> Membership Application </h2>
+
+                <form method="get" action="thankyou.html">
+                    <label> First Name <input type="text" name="first-name" title="Enter your first name" autocomplete="given-name" required></label>
+
+                    <label> Last Name <input type="text" name="last-name" title="Enter your last name" autocomplete="family-name" required></label>
+
+                    <label> Job Title <input type="text" name="organization-title" title="Enter your organizational title using at least seven letters, spaces, or hyphens" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"></label>
+
+                    <label> Email <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="name@example.com" required></label>
+
+                    <label> Phone Number <input type="tel" name="mobile-phone" title="Enter your mobile phone number" autocomplete="tel" required></label>
+
+                    <label> Business / Organization Name <input type="text" name="business-name" title="Enter your business or organization name" autocomplete="organization" required></label>
+
+                    <label> Membership Level
+                        <select name="membership-level" title="Choose a membership level" required>
+                            <option value=""> Select a Membership Level </option>
+                            <option value="np"> NP Membership </option>
+                            <option value="bronze"> Bronze Membership </option>
+                            <option value="silver"> Silver Membership </option>
+                            <option value="gold"> Gold Membership </option>
+                        </select>
+                    </label>
+
+                    <label> Business / Organization Description <textarea name="business-description" title="Describe your business or organization" rows="5"></textarea></label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit"> Send My Application </button>
+                </form>
+            </section>
+
+            <section class="membership-section">
+                <h2> Membership Levels </h2>
+
+                <div class="membership-card">
+                    <h3> NP Membership </h3>
+                    <p> For nonprofit organizations. No fee. </p>
+                    <button type="button" data-modal="np-modal"> Learn More </button>
+                </div>
+
+                <div class="membership-card">
+                    <h3> Bronze Membership </h3>
+                    <p> Basic business benefits and networking access. </p>
+                    <button type="button" data-modal="bronze-modal"> Learn More </button>
+                </div>
+
+                <div class="membership-card">
+                    <h3> Silver Membership </h3>
+                    <p> More visibility, training, and event benefits. </p>
+                    <button type="button" data-modal="silver-modal"> Learn More </button>
+                </div>
+
+                <div class="membership-card">
+                    <h3> Gold Membership </h3>
+                    <p> Premium business exposure and spotlight opportunities. </p>
+                    <button type="button" data-modal="gold-modal"> Learn More </button>
+                </div>
+            </section>
+        </div>
+
+        <dialog id="np-modal">
+            <button class="close-modal" type="button" aria-label="Close NP Membership information">❌</button>
+            <h2> NP Membership Benefits </h2>
+            <p> No membership fee for nonprofit organizations. </p>
+            <p> Access to community events, basic training, and nonprofit networking opportunities. </p>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <button class="close-modal" type="button" aria-label="Close Bronze Membership information">❌</button>
+            <h2> Bronze Membership Benefits </h2>
+            <p> Includes Chamber event access, business networking, and member directory listing. </p>
+            <p> Good option for small businesses getting started. </p>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <button class="close-modal" type="button" aria-label="Close Silver Membership information">❌</button>
+            <h2> Silver Membership Benefits </h2>
+            <p> Includes Bronze benefits plus event discounts, training opportunities, and added advertising options. </p>
+            <p> Good option for growing businesses that want more visibility. </p>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <button class="close-modal" type="button" aria-label="Close Gold Membership information">❌</button>
+            <h2> Gold Membership Benefits </h2>
+            <p> Includes Silver benefits plus priority spotlight placement, premium advertising, and special event recognition. </p>
+            <p> Best option for businesses wanting the highest visibility. </p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong> El Paso Chamber of Commerce </strong></p>
+            <p> 10 Civic Center Plaza </p>
+            <p> El Paso, Texas 79901 </p>
+            <p> info@elpasochamber.example </p>
+            <p> 915-555-0100 </p>
+        </div>
+
+        <div class="footer-project">
+            <p> WDD 231 Chamber Project </p>
+            <p> Rafael Mendoza </p>
+            <p>&copy; <span id="current-year"></span> El Paso Chamber of Commerce </p>
+            <p> Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
