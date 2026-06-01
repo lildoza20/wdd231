@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3DPrints Site Plan </title>
+    <meta name="description" content="This is the site plan for the WDD231 final project website called 3dprints.">
+    <meta name="author" content="Rafael Mendoza">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+    <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1> 3DPrints Site Plan </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> Site Name </h2>
+            <p> 3DPrints is the name I chose for my website. I chose this name because it is simple and clearly shows that the site is about finding 3D print ideas. </p>
+        </section>
+
+        <section>
+            <h2> Site Purpose </h2>
+            <p> 3DPrints will help users search for different 3D print ideas. Users can search words like toy, desk, gift, tool, or home, and the site will show ideas that match. </p>
+            <p> The print ideas will come from a JSON file that I create. Each idea will include information like the name, category, difficulty, material, estimated print time, and a link to the print page. </p>
+        </section>
+
+        <section>
+            <h2> Scenarios </h2>
+            <ul>
+                <li> What are some simple 3D print ideas I can make? </li>
+                <li> Can I search for 3D print ideas by keywords like toy, gift, or tool? </li>
+                <li> Where can I find a link to the original 3D print idea? </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> Color Schema </h2>
+            <p class="bold"> The website will use the following colors: </p>
+            <ul class="color-list">
+                <li class="navy"> Dark Navy <br> Primary -- used for headings, navigation, and footer areas. </li>
+                <li class="teal"> Teal <br> Accent -- used for buttons, links, and highlights. </li>
+                <li class="lightgray"> Light Gray <br> Background -- used for page backgrounds, sections, and cards. </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> Typography </h2>
+            <p><span class="montserrat-sample"> Montserrat </span> will be used for headings and the site title. </p>
+            <p><span class="opensans-sample"> Open Sans </span> will be used for body text, cards, and buttons. </p>
+        </section>
+
+        <section>
+            <h2> Wireframes </h2>
+
+            <h3> Mobile View </h3>
+            <div class="wireframe">
+                <div> [ Site Name / Logo ] </div>
+                <div> [ Menu Button ] </div>
+                <div> [ Hero Section ] </div>
+                <div> [ Search 3D Print Ideas Button ] </div>
+                <div> [ Featured Categories ] </div>
+                <div> [ Toys ] </div>
+                <div> [ Tools ] </div>
+                <div> [ Gifts ] </div>
+                <div> [ How It Works ] </div>
+                <div> [ Footer ] </div>
+            </div>
+
+            <h3> Desktop View </h3>
+            <div class="wireframe desktop-wireframe">
+                <div> [ Site Name / Logo ]          [ Home ] [ Ideas ] [ Suggest ] </div>
+                <div> [ Large Hero Section with Search Button ] </div>
+                <div> [ Featured Categories: Toys | Tools | Gifts | Home ] </div>
+                <div> [ How It Works: Search | View Details | Open Link ] </div>
+                <div> [ Footer ] </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Rafael Mendoza | WDD 231 </p>
+        <p> Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
