@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Discover El Paso | El Paso Chamber of Commerce | WDD 231 </title>
+    <meta name="description" content="Discover local attractions, landmarks, and places of interest in El Paso, Texas page for WDD231.">
+    <meta name="author" content="Rafael Mendoza">
+    <meta property="og:title" content="Discover El Paso">
+    <meta property="og:description" content="Explore landmarks, attractions, and places of interest in El Paso page for WDD231.">
+    <meta property="og:image" content="https://lildoza20.github.io/wdd231/chamber/images/coc-og-image.jpg">
+    <meta property="og:url" content="https://lildoza20.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body class="discover-page">
+    <header>
+        <div class="site-branding">
+            <img src="images/coc-og-image.jpg" alt="El Paso Chamber logo">
+            <div>
+                <span class="site-name"> El Paso Chamber of Commerce </span>
+            </div>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu"> ☰ </button>
+
+        <nav id="main-nav">
+            <a href="index.html"> Home </a>
+            <a href="directory.html"> Directory </a>
+            <a href="discover.html" class="active"> Discover </a>
+            <a href="join.html"> Join </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover El Paso</h1>
+
+        <section class="visitor-message">
+            <h2> Welcome </h2>
+            <p id="visit-message"></p>
+        </section>
+
+        <section class="discover-intro">
+            <h2> Explore the Area </h2>
+            <p> El Paso is known for its mountain views, desert scenery, history, culture, and local business community. </p>
+        </section>
+
+        <section id="discover-cards" class="discover-grid" aria-label="El Paso places of interest"></section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong> El Paso Chamber of Commerce </strong></p>
+            <p> 10 Civic Center Plaza </p>
+            <p> El Paso, Texas 79901 </p>
+            <p> info@elpasochamber.example </p>
+            <p> 915-555-0100 </p>
+        </div>
+
+        <div class="footer-project">
+            <p> WDD 231 Chamber Project </p>
+            <p> Rafael Mendoza </p>
+            <p>&copy; <span id="current-year"></span> El Paso Chamber of Commerce </p>
+            <p> Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
