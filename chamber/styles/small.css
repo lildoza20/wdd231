@@ -488,6 +488,32 @@ main {
     display: grid;
     gap: 1rem;
     align-content: start;
+    grid-template-areas:
+        "card-title"
+        "card-image"
+        "card-address"
+        "card-description"
+        "card-button";
+}
+
+.discover-page .discover-card h2 {
+    grid-area: card-title;
+}
+
+.discover-page .discover-card figure {
+    grid-area: card-image;
+}
+
+.discover-page .discover-card address {
+    grid-area: card-address;
+}
+
+.discover-page .discover-card p {
+    grid-area: card-description;
+}
+
+.discover-page .discover-card button {
+    grid-area: card-button;
 }
 
 .discover-page .place-1 {
