@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3DPrints Homepage </title>
+    <meta name="description" content="This is the homepage for 3DPrints, a website to help users find 3D print ideas.">
+    <meta name="author" content="Rafael Mendoza">
+    <meta property="og:title" content="3DPrints Homepage">
+    <meta property="og:description" content="Find 3D print ideas by searching categories, keywords, and difficulty levels.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-3dprint.svg">
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body class="home">
+    <header>
+        <nav>
+            <a class="site-title" href="index.html"> 3DPrints </a>
+            <button id="menu-button" type="button"> Menu </button>
+            <div id="primary-nav">
+                <a class="active" href="index.html"> Home </a>
+                <a href="ideas.html"> Ideas </a>
+                <a href="suggest.html"> Suggest </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1> 3DPrints </h1>
+                <p> Find simple 3D print ideas for toys, tools, gifts, desk setups, and home organization. </p>
+                <a href="ideas.html" class="button"> Start Searching </a>
+            </div>
+            <img src="images/hero-3dprint.jpg" alt="Simple 3D printer illustration for 3DPrints" width="700" height="500">
+        </section>
+
+        <section class="intro">
+            <h2> What This Site Helps With </h2>
+            <p> This website is made to help people find print ideas when they do not know what to make. It lets users search through saved 3D print ideas and find links to similar prints online. </p>
+        </section>
+
+        <section class="features">
+            <h2> Explore the Site </h2>
+            <div class="card-container">
+                <article class="card">
+                    <h3> Search Ideas </h3>
+                    <p> Search and browse for print ideas using words like toy, tool, desk, gift, cat, or home. </p>
+                    <a href="ideas.html"> Go to Ideas </a>
+                </article>
+
+                <article class="card">
+                    <h3> Suggest a Print </h3>
+                    <p> Send a new 3D print idea that could be added to the website later. </p>
+                    <a href="suggest.html"> Suggest an Idea </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> ©️ <span id="currentyear"></span> | Rafael Mendoza | USA </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3DPrints Thank You Page </title>
+    <meta name="description" content="Thank you page for the 3DPrints suggestion form.">
+    <meta name="author" content="Rafael Mendoza">
+    <meta property="og:title" content="3DPrints Thank You">
+    <meta property="og:description" content="Submitted print idea information for 3DPrints.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-3dprint.svg">
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+    <script type="module" src="scripts/thankyou.js"></script>
+</head>
+<body class="thanks">
+    <header>
+        <nav>
+            <a class="site-title" href="index.html"> 3DPrints </a>
+            <button id="menu-button" type="button"> Menu </button>
+            <div id="primary-nav">
+                <a href="index.html"> Home </a>
+                <a href="ideas.html"> Ideas </a>
+                <a href="suggest.html"> Suggest </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou">
+            <h1> Thank You </h1>
+            <p> Your 3D print idea was submitted. Here is the information that was sent through the form. </p>
+            <div id="form-output"></div>
+            <a class="button" href="ideas.html"> Back to Ideas </a>
+        </section>
+    </main>
+
+    <footer>
+        <p> ©️ <span id="currentyear"></span> | Rafael Mendoza | USA </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

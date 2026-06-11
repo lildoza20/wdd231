@@ -1,0 +1,54 @@
+@media screen and (min-width: 700px) {
+    .site-title {
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #primary-nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        padding-right: 1rem;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .idea-grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: stretch;
+    }
+
+    .idea-card {
+        max-width: none;
+    }
+
+    .controls {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: end;
+    }
+
+    .controls label {
+        text-align: center;
+    }
+}

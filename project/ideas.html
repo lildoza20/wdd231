@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3DPrints Ideas Page </title>
+    <meta name="description" content="Search and browse 3D print ideas by keyword, category, and difficulty.">
+    <meta name="author" content="Rafael Mendoza">
+    <meta property="og:title" content="3DPrints Ideas">
+    <meta property="og:description" content="Search 3D print ideas from a JSON file and view print details in a modal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-3dprint.svg">
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap">
+    <script type="module" src="scripts/ideas.js"></script>
+</head>
+<body class="ideas">
+    <header>
+        <nav>
+            <a class="site-title" href="index.html"> 3DPrints </a>
+            <button id="menu-button" type="button"> Menu </button>
+            <div id="primary-nav">
+                <a href="index.html"> Home </a>
+                <a class="active" href="ideas.html"> Ideas </a>
+                <a href="suggest.html"> Suggest </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="ideas-intro">
+            <h1> 3D Print Ideas </h1>
+            <p> Use the search and filters to find different 3D print ideas. Try words like toy, desk, gift, cat, tool, home, or kitchen. </p>
+        </section>
+
+        <section class="search-section">
+            <h2> Search Ideas </h2>
+            <div class="controls">
+                <label for="search-input"> Search Keyword
+                    <input type="search" id="search-input" placeholder="Example: cat toy">
+                </label>
+
+                <label for="category-select"> Category
+                    <select id="category-select">
+                        <option value="all"> All Categories </option>
+                        <option value="Toys"> Toys </option>
+                        <option value="Desk"> Desk </option>
+                        <option value="Tools"> Tools </option>
+                        <option value="Home"> Home </option>
+                        <option value="Storage"> Storage </option>
+                        <option value="Kitchen"> Kitchen </option>
+                    </select>
+                </label>
+
+                <label for="difficulty-select"> Difficulty
+                    <select id="difficulty-select">
+                        <option value="all"> All Difficulties </option>
+                        <option value="Beginner"> Beginner </option>
+                        <option value="Intermediate"> Intermediate </option>
+                        <option value="Advanced"> Advanced </option>
+                    </select>
+                </label>
+            </div>
+            <p id="result-message"></p>
+        </section>
+
+        <section>
+            <div id="ideas-container" class="idea-grid"></div>
+        </section>
+
+        <dialog id="idea-dialog">
+            <div id="dialog-content"></div>
+            <button id="close-dialog" type="button"> Close </button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p> ©️ <span id="currentyear"></span> | Rafael Mendoza | USA </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
