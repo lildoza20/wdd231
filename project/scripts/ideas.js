@@ -1,7 +1,14 @@
 import "./navigation.js";
 import "./dates.js";
 import { openIdeaDialog } from "./modal.js";
-import { saveLastSearch, getLastSearch } from "./storage.js";
+import {
+    saveLastSearch,
+    getLastSearch,
+    saveLastCategory,
+    getLastCategory,
+    saveLastDifficulty,
+    getLastDifficulty
+} from "./storage.js";
 
 const cardsContainer = document.querySelector("#ideas-container");
 const searchInput = document.querySelector("#search-input");
@@ -29,10 +36,15 @@ async function getIdeas() {
 
 function setupControls() {
     const savedSearch = getLastSearch();
+    const savedCategory = getLastCategory();
+    const savedDifficulty = getLastDifficulty();
 
     if (savedSearch) {
         searchInput.value = savedSearch;
     }
+
+    categorySelect.value = savedCategory;
+    difficultySelect.value = savedDifficulty;
 
     searchInput.addEventListener("input", filterIdeas);
     categorySelect.addEventListener("change", filterIdeas);
@@ -45,6 +57,8 @@ function filterIdeas() {
     const selectedDifficulty = difficultySelect.value;
 
     saveLastSearch(searchTerm);
+    saveLastCategory(selectedCategory);
+    saveLastDifficulty(selectedDifficulty);
 
     const filteredIdeas = allIdeas.filter((idea) => {
         const searchableText = `${idea.name} ${idea.category} ${idea.description} ${idea.tags.join(" ")} ${idea.bestFor}`.toLowerCase();
