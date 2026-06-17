@@ -586,7 +586,7 @@ main {
 
 footer {
     margin-top: 2rem;
-    padding: 1rem;
+    padding: .5rem;
     background-color: var(--primary-color);
     color: var(--card-color);
     text-align: center;
